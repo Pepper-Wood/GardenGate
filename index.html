@@ -1,21 +1,438 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<style>
-body {background-color:black;}
-</style>
+  <title>Through the Garden Gate</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<font face="courier" color="#FFFFFF" size="3">
-<center>
-<img src="images/1.png" alt="image 1" style="width:800px;height:578px;">
-<p></p>
-<img src="text_boxes/0.png" alt="textbox 0" style="width:800px;height:300px;">
-<p></p>
-<a href="pages/1.html"><img src="buttons/0_1.png" alt="button 0_1" style="width:800px;height:120px;"></a>
-<p></p>
-<a href="credits.html"><img src="buttons/0_2.png" alt="button 0_2" style="width:800px;height:120px;"></a>
-</center>
+  <div class="container">
+    <div id="ci-wrap">
+      <div id="ci">
 
+        <div id="slide-1" class="ci-slide">
+          <img class="img-responsive" src="img/1.png">
+          <button class="ci-text btn-block">
+            <span class="gameTitle">THROUGH THE GARDEN GATE</span><br><span class="smallText">By</span><br>Kathryn DiPippo
+          </button>
+          <button class="ci-nav btn-block" path="slide-1b">Begin Story</button>
+          <a href="credits.html" class="creditsLink"><button class="ci-nav btn-block creditsLink">Story Credits</button></a>
+        </div>
+        
+        <div id="slide-1b" class="ci-slide">
+          <img class="img-responsive" src="img/1.png">
+          <button class="ci-text btn-block">
+            There is a wooden gate in front of you that you have never seen before.
+          </button>
+          <button class="ci-nav btn-block" path="slide-2">Go through the door</button>
+        </div>
+        
+        <div id="slide-2" class="ci-slide">
+          <img class="img-responsive" src="img/2.png">
+          <button class="ci-text btn-block">
+            You say please before you open the latch and go through, walk down the path, and see a red painted door.
+          </button>
+          <button class="ci-nav btn-block" path="slide-2b">Next</button>
+        </div>
+        
+        <div id="slide-2b" class="ci-slide">
+          <img class="img-responsive" src="img/2b.png">
+          <button class="ci-text btn-block">
+            There is a knocker that is a <span class="redText">red painted imp</span> and looks like it bites.
+          </button>
+          <button class="ci-nav btn-block" path="slide-3">Don't touch it. Enter door</button>
+          <button class="ci-nav btn-block" path="slide-4">Touch the knocker</button>
+        </div>
+        
+        <div id="slide-3" class="ci-slide">
+          <img class="img-responsive" src="img/3.png">
+          <button class="ci-text btn-block">
+            You walk through the house. There are creatures there telling you that they are hungry, dirty, and hurt.
+          </button>
+          <button class="ci-nav btn-block" path="slide-5">Feed, clean, & calm them</button>
+          <button class="ci-nav btn-block" path="slide-6">Ignore the creatures</button>
+        </div>
+        
+        <div id="slide-4" class="ci-slide">
+          <img class="img-responsive" src="img/4.png">
+          <button class="ci-text btn-block">
+            The knocker bit you.
+          </button>
+          <button class="ci-nav btn-block" path="slide-10">Touch it again</button>
+          <button class="ci-nav btn-block" path="slide-3">Go through the door</button>
+        </div>
+        
+        <div id="slide-5" class="ci-slide">
+          <img class="img-responsive" src="img/5.png">
+          <button class="ci-text btn-block">
+            You show compassion and help the creatures, you make it out of the house.
+          </button>
+          <button class="ci-nav btn-block" path="slide-5b">Next</button>
+        </div>
+        
+        <div id="slide-5b" class="ci-slide">
+          <img class="img-responsive" src="img/5b.png">
+          <button class="ci-text btn-block">
+            From the back garden, you can see the wild wood. You also see a deep well that leads somewhere.
+          </button>
+          <button class="ci-nav btn-block" path="slide-5c">Next</button>
+        </div>
+        
+        <div id="slide-5c" class="ci-slide">
+          <img class="img-responsive" src="img/5c.png">
+          <button class="ci-text btn-block">
+            You can turn back, continue your path, and go to the wild wood, or go to the well.
+          </button>
+          <button class="ci-nav btn-block" path="slide-7">Go to the winter's realm</button>
+          <button class="ci-nav btn-block" path="slide-8">Turn back</button>
+          <button class="ci-nav btn-block" path="slide-9">Continue on the path</button>
+        </div>
+        
+        <div id="slide-6" class="ci-slide">
+          <img class="img-responsive" src="img/6.png">
+          <button class="ci-text btn-block">
+            <span class="redText">You show no compassion and end up wandering the house forever down the endless halls.</span>
+          </button>
+          <button class="ci-nav btn-block" path="slide-1">Restart</button>
+        </div>
+        
+        <div id="slide-7" class="ci-slide">
+          <img class="img-responsive" src="img/7.png">
+          <button class="ci-text btn-block">
+            <span class="blueText">You turn back. Nothing is here for you, but you are content with your decision.</span>
+          </button>
+          <button class="ci-nav btn-block" path="slide-7b">Next</button>
+        </div>
+        
+        <div id="slide-7b" class="ci-slide">
+          <img class="img-responsive" src="img/7b.png">
+          <button class="ci-text btn-block">
+            <span class="blueText">You can build a life here now and be happy.</span>
+          </button>
+          <button class="ci-nav btn-block" path="slide-1">Restart</button>
+        </div>
+        
+        <div id="slide-8" class="ci-slide">
+          <img class="img-responsive" src="img/8.png">
+          <button class="ci-text btn-block">
+            <span class="blueText">You turn back. Nothing is here for you. But you are content with your decision.</span>
+          </button>
+          <button class="ci-nav btn-block" path="slide-1">Restart</button>
+        </div>
+        
+        <div id="slide-9" class="ci-slide">
+          <img class="img-responsive" src="img/9.png">
+          <button class="ci-text btn-block">
+            In the wood, the trees are old, and eyes peer from the undergrowth.
+          </button>
+          <button class="ci-nav btn-block" path="slide-9b">Next</button>
+        </div>
+        
+        <div id="slide-9b" class="ci-slide">
+          <img class="img-responsive" src="img/9b.png">
+          <button class="ci-text btn-block">
+            Beneath a twisted old oak sits an old woman. She asks for your assistance.
+          </button>
+          <button class="ci-nav btn-block" path="slide-11">Assist her</button>
+          <button class="ci-nav btn-block" path="slide-12">Don't assist her</button>
+        </div>
+        
+        <div id="slide-10" class="ci-slide">
+          <img class="img-responsive" src="img/10.png">
+          <button class="ci-text btn-block">
+            <span class="redText">"Learn from your mistakes"</span>
+          </button>
+          <button class="ci-nav btn-block" path="slide-1">Restart</button>
+        </div>
+        
+        <div id="slide-11" class="ci-slide">
+          <img class="img-responsive" src="img/11.png">
+          <button class="ci-text btn-block">
+            You lend the old woman your help. She then points the way to the castle with two princesses inside.
+          </button>
+          <button class="ci-nav btn-block" path="slide-14">Trust the younger princess</button>
+          <button class="ci-nav btn-block" path="slide-13">Trust the elder princess</button>
+        </div>
+        
+        <div id="slide-12" class="ci-slide">
+          <img class="img-responsive" src="img/12.png">
+          <button class="ci-text btn-block">
+            TEXT
+          </button>
+          <button class="ci-nav btn-block" path="slide-1">OPTION</button>
+        </div>
+        
+        <div id="slide-13" class="ci-slide">
+          <img class="img-responsive" src="img/13.png">
+          <button class="ci-text btn-block">
+            You come out of th ecastle in the morning refreshed and groomed. You walk on.
+          </button>
+          <button class="ci-nav btn-block" path="slide-13b">Next</button>
+        </div>
+        
+        <div id="slide-13b" class="ci-slide">
+          <img class="img-responsive" src="img/13b.png">
+          <button class="ci-text btn-block">
+            In a clearing, there are twelve monks around a fire exchanging tales. They call and smile to you.
+          </button>
+          <button class="ci-nav btn-block" path="slide-15">Ignore them and continue</button>
+          <button class="ci-nav btn-block" path="slide-16">Smile back and converse</button>
+        </div>
+        
+        <div id="slide-14" class="ci-slide">
+          <img class="img-responsive" src="img/14.png">
+          <button class="ci-text btn-block">
+            <span class="redText">You end up poisoned by the wine, as the pretty face of the youngest princess smiles down at you.</span>
+          </button>
+          <button class="ci-nav btn-block" path="slide-1">Restart</button>
+        </div>
+        
+        <div id="slide-15" class="ci-slide">
+          <img class="img-responsive" src="img/15.png">
+          <button class="ci-text btn-block">
+            You ignore them and walk on. That night, you sleep <span class="redText">hungry</span>.
+          </button>
+          <button class="ci-nav btn-block" path="slide-17">The next morning...</button>
+        </div>
+        
+        <div id="slide-16" class="ci-slide">
+          <img class="img-responsive" src="img/16.png">
+          <button class="ci-text btn-block">
+            You are polite, and the twelve monks grant you some of their food. That night, you sleep on a <span class="blueText">full</span> stomach.
+          </button>
+          <button class="ci-nav btn-block" path="slide-17">The next morning...</button>
+        </div>
+        
+        <div id="slide-17" class="ci-slide">
+          <img class="img-responsive" src="img/17.png">
+          <button class="ci-text btn-block">
+            You come upon wolves.
+          </button>
+          <button class="ci-nav btn-block" path="slide-18">Trust them</button>
+          <button class="ci-nav btn-block" path="slide-19">Don't trust them</button>
+        </div>
+        
+        <div id="slide-18" class="ci-slide">
+          <img class="img-responsive" src="img/18.png">
+          <button class="ci-text btn-block">
+            You <span class="blueText">trust</span> them but do not tell them where you are going. The wolves help you and soon you find a river.
+          </button>
+          <button class="ci-nav btn-block" path="slide-18b">Next</button>
+        </div>
+        
+        <div id="slide-18b" class="ci-slide">
+          <img class="img-responsive" src="img/18b.png">
+          <button class="ci-text btn-block">
+            A ferryman offers to take you across. He has a dilemma though and wishes to leave his position soon.
+          </button>
+          <button class="ci-nav btn-block" path="slide-18c">Next</button>
+        </div>
+        
+        <div id="slide-18c" class="ci-slide">
+          <img class="img-responsive" src="img/18c.png">
+          <button class="ci-text btn-block">
+            You know the solution is, "if he hands his oar to his passenger, he will be free to leave the boat."
+          </button>
+          <button class="ci-nav btn-block" path="slide-20">Tell him while on the boat</button>
+          <button class="ci-nav btn-block" path="slide-21">Tell him at the other side</button>
+          <button class="ci-nav btn-block" path="slide-22">Don't tell him</button>
+        </div>
+        
+        <div id="slide-19" class="ci-slide">
+          <img class="img-responsive" src="img/19.png">
+          <button class="ci-text btn-block">
+            You <span class="redText">don't trust</span> them and after many nights of weariness and exhaustion, you come upon a river.
+          </button>
+          <button class="ci-nav btn-block" path="slide-19b">Next</button>
+        </div>
+        
+        <div id="slide-19b" class="ci-slide">
+          <img class="img-responsive" src="img/19b.png">
+          <button class="ci-text btn-block">
+            A ferryman offers to take you across. He has a dillemma though and wishes to leave his position soon.
+          </button>
+          <button class="ci-nav btn-block" path="slide-19c">Next</button>
+        </div>
+        
+        <div id="slide-19c" class="ci-slide">
+          <img class="img-responsive" src="img/19c.png">
+          <button class="ci-text btn-block">
+            You know the solution is, "if he hands his oar to his passenger, he will be free to leave the boat."
+          </button>
+          <button class="ci-nav btn-block" path="slide-20">Tell him while on the boat</button>
+          <button class="ci-nav btn-block" path="slide-21">Tell him at the other side</button>
+          <button class="ci-nav btn-block" path="slide-22">Don't tell him</button>
+        </div>
+        
+        <div id="slide-20" class="ci-slide">
+          <img class="img-responsive" src="img/20.png">
+          <button class="ci-text btn-block">
+            <span class="redText">The ferryman thanks you, shoves the oar into your hands, and jumps off of the boat, leaving you to ferry.</span>
+          </button>
+          <button class="ci-nav btn-block" path="slide-1">Restart</button>
+        </div>
+        
+        <div id="slide-21" class="ci-slide">
+          <img class="img-responsive" src="img/21.png">
+          <button class="ci-text btn-block">
+            You tell him and he is <span class="blueText">grateful</span. You continue on your journey.
+          </button>
+          <button class="ci-nav btn-block" path="slide-21b">Next</button>
+        </div>
+        
+        <div id="slide-21b" class="ci-slide">
+          <img class="img-responsive" src="img/21b.png">
+          <button class="ci-text btn-block">
+            If an eagle gives you a feather, keep it.
+          </button>
+          <button class="ci-nav btn-block" path="slide-21c">Next</button>
+        </div>
+        
+        <div id="slide-21c" class="ci-slide">
+          <img class="img-responsive" src="img/21c.png">
+          <button class="ci-text btn-block">
+            Remember: that giants sleep too soundly; that witches are often betrayed by their appetites...
+          </button>
+          <button class="ci-nav btn-block" path="slide-21d">Next</button>
+        </div>
+        
+        <div id="slide-21d" class="ci-slide">
+          <img class="img-responsive" src="img/21d.png">
+          <button class="ci-text btn-block">
+            Dragons have one soft spot, somewhere, always; hearts can be well-hidden, you can betray them with your tongue.
+          </button>
+          <button class="ci-nav btn-block" path="slide-23">Next</button>
+        </div>
+        
+        <div id="slide-22" class="ci-slide">
+          <img class="img-responsive" src="img/22.png">
+          <button class="ci-text btn-block">
+            You do <span class="redText">not</span> tell him and nothing changes, so you continue on your journey.
+          </button>
+          <button class="ci-nav btn-block" path="slide-22b">OPTION</button>
+        </div>
+        
+        <div id="slide-22b" class="ci-slide">
+          <img class="img-responsive" src="img/22b.png">
+          <button class="ci-text btn-block">
+            If an eagle gives you a feather, keep it.
+          </button>
+          <button class="ci-nav btn-block" path="slide-22c">Next</button>
+        </div>
+        
+        <div id="slide-22c" class="ci-slide">
+          <img class="img-responsive" src="img/22c.png">
+          <button class="ci-text btn-block">
+            Remember: that giants sleep too soundly; that witches are often betrayed by their appetites...
+          </button>
+          <button class="ci-nav btn-block" path="slide-22d">Next</button>
+        </div>
+        
+        <div id="slide-22d" class="ci-slide">
+          <img class="img-responsive" src="img/22d.png">
+          <button class="ci-text btn-block">
+            Dragons have one soft spot, somewhere, always; hearts can be well-hidden, you can betray them with your tongue.
+          </button>
+          <button class="ci-nav btn-block" path="slide-23">Next</button>
+        </div>
+        
+        <div id="slide-23" class="ci-slide">
+          <img class="img-responsive" src="img/23.png">
+          <button class="ci-text btn-block">
+            Remember your name. Do not lose hope. What you seek will be found.
+          </button>
+          <button class="ci-nav btn-block" path="slide-23b">Next</button>
+        </div>
+        
+        <div id="slide-23b" class="ci-slide">
+          <img class="img-responsive" src="img/23b.png">
+          <button class="ci-text btn-block">
+            Trust ghosts. Trust those that you have helped to help you in their turn.
+          </button>
+          <button class="ci-nav btn-block" path="slide-24">Trust your dreams and heart</button>
+        </div>
+        
+        <div id="slide-24" class="ci-slide">
+          <img class="img-responsive" src="img/24.png">
+          <button class="ci-text btn-block">
+            When you come back...
+          </button>
+          <button class="ci-nav btn-block" path="slide-27">Go back the way you came</button>
+          <button class="ci-nav btn-block" path="slide-7">Go to the Winter's Realm</button>
+        </div>
+        
+        <!-- there are no slides 25 and 26, gj me -->
+        <div id="slide-27" class="ci-slide">
+          <img class="img-responsive" src="img/27.png">
+          <button class="ci-text btn-block">
+            Favors will be returned and debts repaid. Do not forget your manners and do not look back
+          </button>
+          <button class="ci-nav btn-block" path="slide-28">Ride the wise eagle</button>
+          <button class="ci-nav btn-block" path="slide-29">Ride the silver fish</button>
+          <button class="ci-nav btn-block" path="slide-30">Ride the gray wolf</button>
+        </div>
+        
+        <div id="slide-28" class="ci-slide">
+          <img class="img-responsive" src="img/28.png">
+          <button class="ci-text btn-block">
+            YOU WILL NOT FAIL<br>There is a worm at the heart of the tower; that is why it will not stand.
+          </button>
+          <button class="ci-nav btn-block" path="slide-31">Next</button>
+        </div>
+        
+        <div id="slide-29" class="ci-slide">
+          <img class="img-responsive" src="img/29.png">
+          <button class="ci-text btn-block">
+            YOU WILL NOT DROWN<br>There is a worm at the heart of the tower; that is why it will not stand.
+          </button>
+          <button class="ci-nav btn-block" path="slide-31">Next</button>
+        </div>
+        
+        <div id="slide-30" class="ci-slide">
+          <img class="img-responsive" src="img/30.png">
+          <button class="ci-text btn-block">
+            HOLD TIGHTLY TO ITS FUR<br>There is a worm at the heart of the tower; that is why it will not stand.
+          </button>
+          <button class="ci-nav btn-block" path="slide-31">Next</button>
+        </div>
+        
+        <div id="slide-31" class="ci-slide">
+          <img class="img-responsive" src="img/31.png">
+          <button class="ci-text btn-block">
+            You reach the little house, the place your journey started.
+          </button>
+          <button class="ci-nav btn-block" path="slide-31b">Next</button>
+        </div>
+        
+        <div id="slide-31b" class="ci-slide">
+          <img class="img-responsive" src="img/31b.png">
+          <button class="ci-text btn-block">
+            You recognize it, although it seems much smaller than you remember. You walk up the path and return.
+          </button>
+          <button class="ci-nav btn-block" path="slide-1">Go home</button>
+          <button class="ci-nav btn-block" path="slide-1">Make a home</button>
+          <button class="ci-nav btn-block" path="slide-1">Rest</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <!-- <input type="button" style="position:fixed;top:0px;left:0px;font-size:20px;" class="ci-nav" value="Restart From Beginning" onClick="window.location.reload()"> -->
+
+
+
+  <!-- JavaScript libraries -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/choose-it.js"></script>
+  <script>
+  jQuery(document).ready(function() {
+    jQuery('#ci').chooseIt();
+  });
+  </script>
 </body>
 </html>

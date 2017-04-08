@@ -1,0 +1,37 @@
+body {
+  background-color: #000;
+  font-family: 'VT323', monospace;
+}
+
+.img-fluid { width:100%;}
+.creditCard {
+  margin: 5px;
+  padding: 2px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #d3d3d3;
+  text-align: center;
+}
+h1 {
+  text-align: center;
+  color: #fff;
+}
+.creditCard-name {
+  border-bottom: 1px solid #d3d3d3;
+}
+.creditCard:hover {
+  -webkit-transition:background-color 0.5s linear; 
+  background:#ddd;
+}
+.ci-nav {
+  font-family: 'VT323', monospace;
+  color: #ffff00;
+  background-color: #000;
+  border: 5px solid #ffff00;
+}
+.creditsLink, .creditsLink:hover {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 30px;
+  text-decoration: none;
+}
